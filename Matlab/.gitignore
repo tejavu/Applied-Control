@@ -1,0 +1,6 @@
+*_tcgrt/
+*_tct/
+*_rsim_rtw/
+slprj/
+*.slxc
+*.mexw64
