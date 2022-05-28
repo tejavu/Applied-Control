@@ -1,6 +1,6 @@
 completeAssembly_DataFile;
-pendulumMass = 0.1;
-cartMass = 0.05;
+pendulumMass = 1;
+cartMass = 0.5;
 
 initFeedback.cartPos = [0.75;0.25];
 initFeedback.cartVel = [0;0];
