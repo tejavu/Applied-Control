@@ -1,12 +1,12 @@
 completeAssembly_DataFile;
-pendulumMass = 1;
+pendulumMass = 0.2;
 cartMass = 0.5;
 
-initFeedback.cartPos = [0.75;0.25];
+initFeedback.cartPos = [1;0.4];
 initFeedback.cartVel = [0;0];
 initFeedback.pendPos = [0;0];
 
-cartPosLimits = [0.2, 0.8];
+cartPosLimits = [0.25, 0.75];
 
 %% Beckhoff parameters
 
