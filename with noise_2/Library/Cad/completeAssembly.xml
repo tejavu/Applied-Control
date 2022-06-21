@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/06/20||14:53:35" using="Simscape Multibody Link Version 5.1" from="SolidWorks 26.5.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="completeAssembly" uid="completeAssembly" version="371">
+<AssemblyFile name="completeAssembly.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="allPartsWithoutSlidersAndPendulums-1" uid="allPartsWithoutSlidersAndPendulums-1" grounded="true" entityUid="allPartsWithoutSlidersAndPendulums*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Assem_motor1-2" uid="Assem_motor1-2" entityUid="Assem_motor1*:*Default">
+<Transform>
+<Rotation>1.224541157088303e-16 -1.1420106703718087e-16 -0.99999999999999978 0 0.99999999999999989 -1.1420106703718085e-16 0.99999999999999989 0 1.2245411570883027e-16</Rotation>
+<Translation>0.50059072128071447 0.098432309353719549 -0.030173923163809332</Translation>
+</Transform>
+</Instance>
+<Instance name="pendulumAssembly-1" uid="pendulumAssembly-1" entityUid="pendulumAssembly*:*Default">
+<Transform>
+<Rotation>0 0.80648756204630678 0.59125105688244162 -0.99999999999999989 3.3334394550295129e-15 -4.4882507336030301e-15 -5.590617992835886e-15 -0.59125105688244173 0.80648756204630667</Rotation>
+<Translation>-0.49999999999999933 -0.16611999999999691 0.046499999989999249</Translation>
+</Transform>
+</Instance>
+<Instance name="Assem1_motor2-2" uid="Assem1_motor2-2" entityUid="Assem1_motor2*:*Default">
+<Transform>
+<Rotation>1.1102230246251568e-16 1.1564823173178688e-16 1 -1.8206364107777697e-15 -1 1.1564823173178707e-16 1 -1.8206364107777697e-15 -1.1102230246251547e-16</Rotation>
+<Translation>-0.5039547992894311 0.12380342830931867 -0.021741544847068632</Translation>
+</Transform>
+</Instance>
+<Instance name="pendulumAssembly-2" uid="pendulumAssembly-2" entityUid="pendulumAssembly*:*Default">
+<Transform>
+<Rotation>1.2246467991473475e-16 0.80648756204630634 0.59125105688244251 -1 2.0646451923147867e-15 -2.6091217423947314e-15 -3.324947885149311e-15 -0.59125105688244251 0.80648756204630634</Rotation>
+<Translation>0.49999999999998523 -0.16599999999999848 0.046499999989999471</Translation>
+</Transform>
+</Instance>
+<Instance name="Table-1" uid="Table-1" entityUid="Table*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>1.9984014443252818e-15 0.015000000000002678 0</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Parallel name="Parallel1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>allPartsWithoutSlidersAndPendulums-1</Uid>
+</InstancePath>
+<Position>-0.57199999999999995 0.1850000000000025 0</Position>
+<Axis>1 1.1564823173178715e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem_motor1-2</Uid>
+</InstancePath>
+<Position>0.0045003924738930834 -0.0043650007046674988 0.052590721280730113</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Parallel name="Parallel7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>allPartsWithoutSlidersAndPendulums-1</Uid>
+</InstancePath>
+<Position>-0.57199999999999995 0.1850000000000025 0</Position>
+<Axis>1 1.1564823173178715e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem1_motor2-2</Uid>
+</InstancePath>
+<Position>-0.0039319858428475164 0.00099073695836536524 -0.048045200710568725</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Assem1_motor2-2</Uid>
+</InstancePath>
+<Position>0.058241544837068893 0.014923428309314785 0.0039547992894317097</Position>
+<Axis>-1 -3.0604090967651612e-16 1.9861779871979719e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pendulumAssembly-1</Uid>
+</InstancePath>
+<Position>-0.27500000000000058 0.0059125105688244695 -0.0080648756204632077</Position>
+<Axis>3.4914813388430829e-15 0.59125105688244239 -0.80648756204630623</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Assem_motor1-2</Uid>
+</InstancePath>
+<Position>0.066673923153809461 0.01056769064628256 0.00059072128072978902</Position>
+<Axis>-0.99999999999999989 -2.2424601065933155e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pendulumAssembly-2</Uid>
+</InstancePath>
+<Position>-0.27500000000000063 0.005912510568824525 -0.0080648756204632632</Position>
+<Axis>3.4914813388430852e-15 0.59125105688244239 -0.80648756204630645</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident20">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>allPartsWithoutSlidersAndPendulums-1</Uid>
+</InstancePath>
+<Position>0.5499999999999845 0.056000000000002936 -0.0059999999999997833</Position>
+<Axis>0 -1.2246467991473569e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem_motor1-2</Uid>
+</InstancePath>
+<Position>0.02417392316380948 -0.023807309363716833 0.011590721280730132</Position>
+<Axis>0.99999999999999989 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident21">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>allPartsWithoutSlidersAndPendulums-1</Uid>
+</InstancePath>
+<Position>-0.54999999999999993 0.18088000000000248 -0.0060000000000002274</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem1_motor2-2</Uid>
+</InstancePath>
+<Position>0.015741544847068911 -0.038451571700683987 -0.026045200710568706</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem_motor1-2</Uid>
+</InstancePath>
+<Position>0.024173923153809479 0.02756769064628313 0.050590721280730111</Position>
+<Axis>0 0.99999999999999989 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Table-1</Uid>
+</InstancePath>
+<Position>-0.65000000000000013 0.019999999999999934 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Distance name="Distance11">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem1_motor2-2</Uid>
+</InstancePath>
+<Position>0.023741544837068886 -0.02707657169068399 0.05395479928943131</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Table-1</Uid>
+</InstancePath>
+<Position>-0.65000000000000013 0.019999999999999934 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident22">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>allPartsWithoutSlidersAndPendulums-1</Uid>
+</InstancePath>
+<Position>-0.57199999999999984 0.035000000000002585 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Table-1</Uid>
+</InstancePath>
+<Position>-0.65000000000000013 0.019999999999999934 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>allPartsWithoutSlidersAndPendulums-1</Uid>
+</InstancePath>
+<Position>-0.57899999999999985 -0.031349999999999878 -0.018000000000000238</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Table-1</Uid>
+</InstancePath>
+<Position>-0.57900000000000185 0 -0.01799999999999996</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident23">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>allPartsWithoutSlidersAndPendulums-1</Uid>
+</InstancePath>
+<Position>-0.57919999999999994 0.040025000000002531 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Table-1</Uid>
+</InstancePath>
+<Position>-0.18604240282685536 0.21360424028268554 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance13">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pendulumAssembly-1</Uid>
+</InstancePath>
+<Position>-0.27500000000000052 0.017737531706473408 -0.024194626861389346</Position>
+<Axis>3.5059373678095561e-15 0.59125105688244239 -0.80648756204630623</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem1_motor2-2</Uid>
+</InstancePath>
+<Position>0.058241544837068893 0.014923428309314785 0.0039547992894317097</Position>
+<Axis>1 3.0604090967651612e-16 -1.9861779871979714e-16</Axis>
+</ConstraintGeometry>
+</Distance>
+<Distance name="Distance14">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem_motor1-2</Uid>
+</InstancePath>
+<Position>0.066673923153809461 0.01056769064628256 0.00059072128072978902</Position>
+<Axis>0.99999999999999989 2.2424601065933155e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pendulumAssembly-2</Uid>
+</InstancePath>
+<Position>-0.27500000000000063 0.017737531706473408 -0.024194626861389401</Position>
+<Axis>3.5059373678095581e-15 0.59125105688244239 -0.80648756204630645</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Assem1_motor2" uid="Assem1_motor2*:*Default" version="130">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Assem1_motor2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.23036676539795187</Mass>
+<CenterOfMass>-0.013299186138302409 -0.0035789113668499464 0.00431064107249024</CenterOfMass>
+<Inertia>0.0002954531701315666 0.00034204526638574752 0.00024669089773633377 -1.5303682198660749e-06 2.8970871249675645e-06 8.7453490086428428e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Assem1_motor2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Assem_motor1" uid="Assem_motor1*:*Default" version="127">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Assem_motor1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.1836908119203349</Mass>
+<CenterOfMass>-0.0039879147159193259 0.00079299583620585435 0.00084118865228129103</CenterOfMass>
+<Inertia>0.00018565423142668974 0.00025496463118630531 0.00013915641106715534 -4.5856714824436518e-07 1.6436596303623776e-06 2.1211714932987197e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Assem_motor1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Table" uid="Table*:*Default" version="348">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Table.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.0929346098178012</Mass>
+<CenterOfMass>0 0.0099999999999999742 -0.17508727415733158</CenterOfMass>
+<Inertia>0.052126492771613984 0.7686625460456914 0.71687558224806514 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Table_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0.20000000000000001" g="0.20000000000000001" b="0.20000000000000001" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="allPartsWithoutSlidersAndPendulums" uid="allPartsWithoutSlidersAndPendulums*:*Default" version="296">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="allPartsWithoutSlidersAndPendulums.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>7.9337929639715048</Mass>
+<CenterOfMass>0.48452157334182239 0.58581806078293064 1.0762388971073675</CenterOfMass>
+<Inertia>0.085013480218164447 1.6668627241406144 1.6059876662896295 -0.00094636834037965974 -0.0012486331981382103 0.027735055600627074</Inertia>
+</MassProperties>
+<GeometryFile name="allPartsWithoutSlidersAndPendulums_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="pendulumAssembly" uid="pendulumAssembly*:*Default" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="pendulumAssembly.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.033162655024521322</Mass>
+<CenterOfMass>-0.13367731478943656 0.010136672522885345 0.01744516578736572</CenterOfMass>
+<Inertia>1.5723603109835488e-06 0.00033036125842805276 0.00033013217314166926 3.6309743047023861e-07 -4.4449882251497196e-06 3.2587026376136969e-06</Inertia>
+</MassProperties>
+<GeometryFile name="pendulumAssembly_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
